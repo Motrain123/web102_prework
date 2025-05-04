@@ -21,7 +21,15 @@ body {
 
 .stats-container {
     display: flex;
+    align-items: center; /* part 2*/
+    cursor: pointer; /* part 2*/
+    
 }
+/* part 2 */
+.stats-container:hover {
+    box-shadow: 0 0 30px lightblue;   
+}
+
 
 .stats-card {
     background-color: #a8b0bc;
@@ -66,10 +74,20 @@ body {
     text-align: center;
 }
 
+/*customizations*/
 button {
     font-family: 'Cabin';
     border: none;
-    padding: 1%;
-    margin: 1%;
+    padding: 10px 20px;
+    margin: 10px;
     border-radius: 7px;
+    background-color:lightblue;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: skyblue;
 }
